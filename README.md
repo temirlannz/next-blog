@@ -1,5 +1,22 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## About project
+
+This full-stack application was made with Next.js, Typescript, PostgreSQL, Prisma, TailwindCSS, DaisyUI. 
+Fully functional web-app with loading-skeleton on blog creation, details pages. For form handling I used react-hook-form, and for data fetching Tanstack-Query.
+
+<h3>Home page /</h3>
+
+![HOMEPAGE](public/home.png)
+
+<h3>Post create page /create</h3>
+
+![HOMEPAGE](public/create.png)
+
+<h3>Blog details page /blog/id</h3>
+
+![HOMEPAGE](public/details.png)
+
 ## Getting Started
 
 First, run the development server:

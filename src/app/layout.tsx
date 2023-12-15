@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import Navbar from "@/components/Navbar";
+import Provider from "@/providers/QueryClient";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,8 +18,20 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" data-theme="light">
+      <body className={inter.className + ' h-screen'}>
+        <Provider>
+            <Navbar />
+
+            <main>
+                <section className='container h-full pt-12'>
+                    {children}
+                </section>
+            </main>
+
+            <Footer />
+        </Provider>
+      </body>
     </html>
   )
 }
